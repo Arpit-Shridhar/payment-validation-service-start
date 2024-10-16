@@ -6,14 +6,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class User {
+public class CreatePaymentRes {
+	
+	private String txnRef;
+	private String providerRef;
+	private String redirectUrl;
 
-	private String endUserID;
-    private String firstname;
-    private String lastname;
-    private String email;
-    private String mobilePhone;
 }
